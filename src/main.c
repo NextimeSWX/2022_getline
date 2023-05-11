@@ -1,7 +1,7 @@
 /*
  * E89 Pedagogical & Technical Lab
  * project:     getline
- * created on:  2023-05-11 - 11:06 +0200
+ * created on:  2023-05-11 - 11:07 +0200
  * 1st author:  evan.lebihan - evan.lebihan
  * description: main.c
  */
