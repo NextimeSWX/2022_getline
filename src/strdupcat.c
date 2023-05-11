@@ -16,7 +16,7 @@ char *strdupcat(const char *s1, const char *s2)
 
     i = 0;
     j = 0;
-    str = malloc(sizeof(char) * (stu_strlen(s1) + stu_strlen(s2 + 1)));
+    str = malloc(sizeof(char) * (stu_strlen(s1) + stu_strlen(s2)));
     while (s1[i] != '\0') {
         str[i] = s1[i];
         i += 1;

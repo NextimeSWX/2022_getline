@@ -15,16 +15,14 @@ char *stu_getline(int fd)
     char *to_return = NULL;
     char *to_free;
 
-    if (fd == -1) {
-        if (carry == NULL) {
-            free(carry);
-        }
-            return (NULL);
-    }
+
     if (fd != fdsave) {
         free(carry);
         carry = NULL;
         fdsave = fd;
+    }
+    if (fd == -1) {
+        return (NULL);
     }
     if (carry == NULL) {
         to_return = loop_read_until(fd, '\n');
